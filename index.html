@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var array=['03298545683','03198545683','03498545683','02298545683','06294345683','03698545683','03298565683'];
+    var regexp=/^03[2-9][0-9]{8,8}$/;
+    for(var i=0;i<array.length;i++)
+    {
+        if(regexp.test(array[i]))
+        {
+            alert(array[i]+' la so viettel')
+        }
+        else
+            {
+                alert(array[i]+' khong la so viettel')
+            }
+    }
+</script>
+</body>
+</html>
